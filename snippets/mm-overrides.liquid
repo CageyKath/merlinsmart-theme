@@ -1,0 +1,21 @@
+{% comment %}
+  MerlinsMart overrides — all custom CSS lives here, not in Horizon's own files,
+  so theme updates stay clean and this is trivial to remove.
+
+  TEMPORARY (build phase): Shopify's demo placeholder graphics ship in teal,
+  coral and grey, which fight the cream/espresso/gold palette and make the
+  layout impossible to judge. This renders them as flat tonal blocks so empty
+  slots read as empty rather than as someone else's art direction.
+  Delete this block once real product and set photography is in place.
+{% endcomment %}
+
+<style>
+  svg[class*='placeholder'] {
+    background-color: #EDE6D8;
+  }
+
+  svg[class*='placeholder'] * {
+    fill: transparent !important;
+    stroke: none !important;
+  }
+</style>
