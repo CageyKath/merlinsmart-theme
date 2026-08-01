@@ -8,14 +8,14 @@
  * ------------------------------------------------------------
  */{
   "sections": {
-    "hero_main": {
+    "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>The 3-Flavor Gift Set</p>",
+            "text": "<p>Browse our latest products</p>",
             "text_color": "{{ settings.color_palette.background }}",
             "width": "fit-content",
             "max_width": "normal",
@@ -41,10 +41,13 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop the 3-Flavor Set",
+            "label": "Shop all",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "button-primary",
+            "style_class": "button-custom",
+            "custom_button_background": "rgba(0,0,0,0)",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -88,260 +91,195 @@
         "padding-block-end": 72
       }
     },
-    "lsu_feature": {
-      "type": "media-with-content",
-      "settings": {
-        "media_width": "medium",
-        "media_height": "60svh",
-        "media_position": "left"
-      },
+    "product_list_fa6P9H": {
+      "type": "product-list",
       "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true
-        },
-        "content": {
-          "type": "_content-without-appearance",
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
           "static": true,
           "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between"
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
-            "caption": {
-              "type": "text",
-              "name": "t:names.caption",
+            "product_list_text_YFtzcL": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
               "settings": {
-                "text": "LSU",
-                "type_preset": "h6"
-              }
-            },
-            "group": {
-              "type": "group",
-              "settings": {
-                "height": "fit"
+                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {
-                "heading": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "LSU 3-Flavor Gift Set",
-                    "type_preset": "h3"
-                  }
-                },
-                "text": {
-                  "type": "text",
-                  "settings": {
-                    "text": "Three licensed rubs, boxed and ready to give.",
-                    "max_width": "narrow",
-                    "type_preset": "rte"
-                  }
-                }
-              },
-              "block_order": [
-                "heading",
-                "text"
-              ]
+              "blocks": {}
             },
-            "button": {
-              "type": "button",
+            "product_list_button_MWeP9V": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
               "settings": {
-                "label": "t:text_defaults.shop_now_button_label",
-                "link": "shopify://collections/all",
-                "style_class": "button-unstyled"
-              }
+                "label": "View all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "caption",
-            "group",
-            "button"
+            "product_list_text_YFtzcL",
+            "product_list_button_MWeP9V"
           ]
-        }
-      },
-      "block_order": [
-        "media",
-        "content"
-      ]
-    },
-    "lsu_products": {
-      "type": "product-list",
-      "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "max_products": 3,
-        "columns": 3,
-        "mobile_columns": "2",
-        "section_width": "page-width",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "background_color": "{{ settings.color_palette.background }}"
-      },
-      "blocks": {
-        "card": {
-          "type": "_product-card",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "card"
-      ]
-    },
-    "bama_feature": {
-      "type": "media-with-content",
-      "settings": {
-        "media_width": "medium",
-        "media_height": "60svh",
-        "media_position": "right"
-      },
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true
         },
-        "content": {
-          "type": "_content-without-appearance",
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between"
+            "product_card_gap": 4,
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
-            "caption": {
-              "type": "text",
-              "name": "t:names.caption",
+            "product_card_gallery_677WP3": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
               "settings": {
-                "text": "Alabama",
-                "type_preset": "h6"
-              }
-            },
-            "group": {
-              "type": "group",
-              "settings": {
-                "height": "fit"
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {
-                "heading": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "Alabama 3-Flavor Gift Set",
-                    "type_preset": "h3"
-                  }
-                },
-                "text": {
-                  "type": "text",
-                  "settings": {
-                    "text": "Three licensed rubs, boxed and ready to give.",
-                    "max_width": "narrow",
-                    "type_preset": "rte"
-                  }
-                }
-              },
-              "block_order": [
-                "heading",
-                "text"
-              ]
+              "blocks": {}
             },
-            "button": {
-              "type": "button",
+            "product_title_YXxMTj": {
+              "type": "product-title",
+              "name": "t:names.product_title",
               "settings": {
-                "label": "t:text_defaults.shop_now_button_label",
-                "link": "shopify://collections/all",
-                "style_class": "button-unstyled"
-              }
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_JQzVV4": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "caption",
-            "group",
-            "button"
+            "product_card_gallery_677WP3",
+            "product_title_YXxMTj",
+            "price_JQzVV4"
           ]
         }
       },
-      "block_order": [
-        "media",
-        "content"
-      ]
-    },
-    "bama_products": {
-      "type": "product-list",
+      "name": "t:names.product_list",
       "settings": {
         "collection": "all",
         "layout_type": "grid",
-        "max_products": 3,
-        "columns": 3,
-        "mobile_columns": "2",
-        "section_width": "page-width",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "background_color": "{{ settings.color_palette.background }}"
-      },
-      "blocks": {
-        "card": {
-          "type": "_product-card",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "card"
-      ]
-    },
-    "all_collegiate": {
-      "type": "product-list",
-      "settings": {
-        "collection": "all",
-        "layout_type": "grid",
+        "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
-        "section_width": "page-width",
+        "mobile_card_size": "60cqw",
         "columns_gap": 8,
         "rows_gap": 24,
-        "background_color": "{{ settings.color_palette.background }}"
-      },
-      "blocks": {
-        "card": {
-          "type": "_product-card",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "card"
-      ]
-    },
-    "trust_bar": {
-      "type": "marquee",
-      "settings": {},
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Officially licensed  ·  Flat-rate shipping  ·  30-day returns",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "var(--font-size--h2)",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "width": "fit-content"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ]
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
-    "hero_main",
-    "lsu_feature",
-    "lsu_products",
-    "bama_feature",
-    "bama_products",
-    "all_collegiate",
-    "trust_bar"
+    "hero_jVaWmY",
+    "product_list_fa6P9H"
   ]
 }
