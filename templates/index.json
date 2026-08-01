@@ -88,7 +88,8 @@
       "type": "media-with-content",
       "settings": {
         "media_width": "medium",
-        "media_height": "60svh"
+        "media_height": "60svh",
+        "media_position": "left"
       },
       "blocks": {
         "media": {
@@ -142,9 +143,9 @@
             "button": {
               "type": "button",
               "settings": {
-                "label": "t:text_defaults.shop_now_button_label",
+                "label": "Shop the LSU Set",
                 "link": "shopify://collections/all",
-                "style_class": "button-unstyled"
+                "style_class": "button-primary"
               }
             }
           },
@@ -195,7 +196,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<p>Shop LSU</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -346,7 +347,8 @@
       "type": "media-with-content",
       "settings": {
         "media_width": "medium",
-        "media_height": "60svh"
+        "media_height": "60svh",
+        "media_position": "right"
       },
       "blocks": {
         "media": {
@@ -400,9 +402,9 @@
             "button": {
               "type": "button",
               "settings": {
-                "label": "t:text_defaults.shop_now_button_label",
+                "label": "Shop the Alabama Set",
                 "link": "shopify://collections/all",
-                "style_class": "button-unstyled"
+                "style_class": "button-primary"
               }
             }
           },
@@ -453,7 +455,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<p>Shop Alabama</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -639,7 +641,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<p>Shop All Collegiate</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",

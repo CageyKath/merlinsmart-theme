@@ -4,18 +4,43 @@
 
   TEMPORARY (build phase): Shopify's demo placeholder graphics ship in teal,
   coral and grey, which fight the cream/espresso/gold palette and make the
-  layout impossible to judge. This renders them as flat tonal blocks so empty
+  layout impossible to judge. This flattens them to a single warm tone so empty
   slots read as empty rather than as someone else's art direction.
   Delete this block once real product and set photography is in place.
 {% endcomment %}
 
 <style>
-  svg[class*='placeholder'] {
-    background-color: #EDE6D8;
+  /* Flatten every Shopify demo placeholder to one warm tone. */
+  .placeholder-svg,
+  svg[class*='placeholder'],
+  [class*='placeholder'] > svg {
+    background-color: #EDE6D8 !important;
   }
 
-  svg[class*='placeholder'] * {
-    fill: transparent !important;
+  .placeholder-svg path,
+  .placeholder-svg rect,
+  .placeholder-svg circle,
+  .placeholder-svg ellipse,
+  .placeholder-svg polygon,
+  .placeholder-svg g,
+  svg[class*='placeholder'] path,
+  svg[class*='placeholder'] rect,
+  svg[class*='placeholder'] circle,
+  svg[class*='placeholder'] ellipse,
+  svg[class*='placeholder'] polygon,
+  svg[class*='placeholder'] g,
+  [class*='placeholder'] > svg path,
+  [class*='placeholder'] > svg rect,
+  [class*='placeholder'] > svg circle,
+  [class*='placeholder'] > svg polygon,
+  [class*='placeholder'] > svg g {
+    fill: #EDE6D8 !important;
     stroke: none !important;
+  }
+
+  /* Empty media slots in editorial sections read as blank tonal blocks. */
+  .card-gallery__placeholder,
+  .media-block__placeholder {
+    background-color: #EDE6D8 !important;
   }
 </style>
