@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Photography placeholder">
+  <rect width="1600" height="900" fill="#EDE6D8"/>
+  <rect x="40" y="40" width="1520" height="820" fill="none" stroke="#B68B3A" stroke-width="2" stroke-opacity="0.45"/>
+  <g stroke="#B68B3A" stroke-opacity="0.5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(760 350) scale(3.4)">
+    <path d="M6 3v8a2 2 0 0 0 2 2 2 2 0 0 0 2-2V3M8 13v8"/>
+    <path d="M17 3c-1.5 2-2 4-2 6v3h3V3z"/>
+    <path d="M16 12v9"/>
+  </g>
+  <line x1="700" y1="540" x2="900" y2="540" stroke="#B68B3A" stroke-width="2" stroke-opacity="0.5"/>
+  <text x="800" y="596" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="10" fill="#241A14" fill-opacity="0.55">SET PHOTOGRAPHY</text>
+  <text x="800" y="640" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="3" fill="#241A14" fill-opacity="0.35">image to come</text>
+</svg>

@@ -2,45 +2,52 @@
   MerlinsMart overrides — all custom CSS lives here, not in Horizon's own files,
   so theme updates stay clean and this is trivial to remove.
 
-  TEMPORARY (build phase): Shopify's demo placeholder graphics ship in teal,
-  coral and grey, which fight the cream/espresso/gold palette and make the
-  layout impossible to judge. This flattens them to a single warm tone so empty
-  slots read as empty rather than as someone else's art direction.
-  Delete this block once real product and set photography is in place.
+  TEMPORARY (build phase): replaces Shopify's teal/coral demo placeholders with
+  MerlinsMart-toned placeholders, so empty slots read as "photography to come"
+  rather than as someone else's art direction. Lets the layout be judged and
+  finished before any real imagery exists.
+
+  TO REMOVE AT LAUNCH: delete this file, delete the two mm-placeholder-*.svg
+  assets, and remove the {%- render 'mm-overrides' -%} line from layout/theme.liquid.
 {% endcomment %}
 
+{%- assign ph_wide = 'mm-placeholder-wide.svg' | asset_url -%}
+{%- assign ph_square = 'mm-placeholder-square.svg' | asset_url -%}
+
 <style>
-  /* Flatten every Shopify demo placeholder to one warm tone. */
+  /* Hide Shopify's demo artwork wherever it renders. */
+  .placeholder-svg,
+  svg[class*='placeholder'] {
+    opacity: 0 !important;
+  }
+
+  /* Paint MM placeholders onto the containers instead. */
   .placeholder-svg,
   svg[class*='placeholder'],
-  [class*='placeholder'] > svg {
-    background-color: #EDE6D8 !important;
+  [class*='placeholder'] {
+    background-color: #EDE6D8;
+    background-image: url({{ ph_square }});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .placeholder-svg path,
-  .placeholder-svg rect,
-  .placeholder-svg circle,
-  .placeholder-svg ellipse,
-  .placeholder-svg polygon,
-  .placeholder-svg g,
-  svg[class*='placeholder'] path,
-  svg[class*='placeholder'] rect,
-  svg[class*='placeholder'] circle,
-  svg[class*='placeholder'] ellipse,
-  svg[class*='placeholder'] polygon,
-  svg[class*='placeholder'] g,
-  [class*='placeholder'] > svg path,
-  [class*='placeholder'] > svg rect,
-  [class*='placeholder'] > svg circle,
-  [class*='placeholder'] > svg polygon,
-  [class*='placeholder'] > svg g {
-    fill: #EDE6D8 !important;
-    stroke: none !important;
+  /* Wide slots — heroes and editorial media — get the landscape version. */
+  .banner__media [class*='placeholder'],
+  .background-media [class*='placeholder'],
+  .media-block__placeholder,
+  .media-with-content [class*='placeholder'],
+  [class*='hero'] [class*='placeholder'] {
+    background-image: url({{ ph_wide }});
   }
 
-  /* Empty media slots in editorial sections read as blank tonal blocks. */
-  .card-gallery__placeholder,
-  .media-block__placeholder {
-    background-color: #EDE6D8 !important;
+  /* Empty media blocks that render no svg at all still need a fill. */
+  .media-with-content__media:empty,
+  .media-block:empty {
+    background-color: #EDE6D8;
+    background-image: url({{ ph_wide }});
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
   }
 </style>
