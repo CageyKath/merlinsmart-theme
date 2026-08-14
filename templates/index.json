@@ -11,7 +11,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Officially Licensed Collegiate Gift Sets</p>",
+            "text": "<p>Made for Fans. Built for Flavor.</p>",
             "text_color": "{{ settings.color_palette.background }}",
             "width": "fit-content",
             "max_width": "normal",
@@ -108,7 +108,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>LSU</p>",
+                "text": "<p>Officially Licensed · LSU</p>",
                 "type_preset": "h6"
               }
             },
@@ -122,14 +122,14 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>LSU Gift Set</p>",
+                    "text": "<p>The LSU Collegiate Collection</p>",
                     "type_preset": "h3"
                   }
                 },
                 "text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Geaux Tigers Blend, Death Valley Victory Rub and Tiger Bait Blend, boxed together and ready to give.</p>",
+                    "text": "<p>Geaux Tigers Blend, Death Valley Victory Rub and Tiger Bait Blend — three jars, boxed and ready to give. Perfect for any meal.</p>",
                     "max_width": "narrow",
                     "type_preset": "rte"
                   }
@@ -367,7 +367,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Alabama</p>",
+                "text": "<p>Officially Licensed · Alabama</p>",
                 "type_preset": "h6"
               }
             },
@@ -381,14 +381,14 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>Alabama Gift Set</p>",
+                    "text": "<p>The Alabama Collegiate Collection</p>",
                     "type_preset": "h3"
                   }
                 },
                 "text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Roll Tide Rub and Rammer Jammer Rub, boxed together and ready to give.</p>",
+                    "text": "<p>Roll Tide Rub and Rammer Jammer Rub — boxed and ready to give. Perfect for any meal.</p>",
                     "max_width": "narrow",
                     "type_preset": "rte"
                   }
@@ -795,7 +795,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Officially licensed  ·  Flat-rate shipping  ·  30-day returns</p>",
+            "text": "<p>Officially Licensed  ·  Made for Fans. Built for Flavor.  ·  Perfect for Any Meal</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "var(--font-size--h2)",
