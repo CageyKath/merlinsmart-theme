@@ -11,7 +11,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>The 3-Flavor Gift Set</p>",
+            "text": "<p>Officially Licensed Collegiate Gift Sets</p>",
             "text_color": "{{ settings.color_palette.background }}",
             "width": "fit-content",
             "max_width": "normal",
@@ -37,7 +37,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop the 3-Flavor Set",
+            "label": "Shop Gift Sets",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button-primary",
@@ -122,14 +122,14 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>LSU 3-Flavor Gift Set</p>",
+                    "text": "<p>LSU Gift Set</p>",
                     "type_preset": "h3"
                   }
                 },
                 "text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Three licensed rubs, boxed and ready to give.</p>",
+                    "text": "<p>Geaux Tigers Blend, Death Valley Victory Rub and Tiger Bait Blend, boxed together and ready to give.</p>",
                     "max_width": "narrow",
                     "type_preset": "rte"
                   }
@@ -381,14 +381,14 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>Alabama 3-Flavor Gift Set</p>",
+                    "text": "<p>Alabama Gift Set</p>",
                     "type_preset": "h3"
                   }
                 },
                 "text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Three licensed rubs, boxed and ready to give.</p>",
+                    "text": "<p>Roll Tide Rub and Rammer Jammer Rub, boxed together and ready to give.</p>",
                     "max_width": "narrow",
                     "type_preset": "rte"
                   }
@@ -586,8 +586,8 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 3,
-        "columns": 3,
+        "max_products": 2,
+        "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
