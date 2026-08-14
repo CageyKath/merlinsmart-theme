@@ -1,0 +1,204 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ * ------------------------------------------------------------
+ */{
+  "sections": {
+    "story": {
+      "type": "media-with-content",
+      "settings": {
+        "media_width": "medium",
+        "media_height": "60svh",
+        "media_position": "left"
+      },
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between"
+          },
+          "blocks": {
+            "caption": {
+              "type": "text",
+              "name": "t:names.caption",
+              "settings": {
+                "text": "<p>About</p>",
+                "type_preset": "h6"
+              }
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "height": "fit"
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>MerlinsMart</p>",
+                    "type_preset": "h3"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>A curator of licensed collegiate gifts and small-batch pantry brands. [Brand story — 60-80 words, replace before launch.]</p>",
+                    "max_width": "narrow",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "heading",
+                "text"
+              ]
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "label": "Shop Collegiate",
+                "link": "shopify://collections/all",
+                "style_class": "button-primary"
+              }
+            }
+          },
+          "block_order": [
+            "caption",
+            "group",
+            "button"
+          ]
+        }
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "licensing": {
+      "type": "media-with-content",
+      "settings": {
+        "media_width": "medium",
+        "media_height": "60svh",
+        "media_position": "right"
+      },
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between"
+          },
+          "blocks": {
+            "caption": {
+              "type": "text",
+              "name": "t:names.caption",
+              "settings": {
+                "text": "<p>Authenticity</p>",
+                "type_preset": "h6"
+              }
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "height": "fit"
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>Officially Licensed</p>",
+                    "type_preset": "h3"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Every collegiate product is licensed through the Collegiate Licensing Company. [CLC-supplied wording goes here — do not draft.]</p>",
+                    "max_width": "narrow",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "heading",
+                "text"
+              ]
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "label": "Shop All",
+                "link": "shopify://collections/all",
+                "style_class": "button-primary"
+              }
+            }
+          },
+          "block_order": [
+            "caption",
+            "group",
+            "button"
+          ]
+        }
+      }
+    }
+  },
+  "order": [
+    "story",
+    "main",
+    "licensing"
+  ]
+}
