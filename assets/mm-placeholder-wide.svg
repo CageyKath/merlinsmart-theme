@@ -7,6 +7,4 @@
     <path d="M16 12v9"/>
   </g>
   <line x1="700" y1="540" x2="900" y2="540" stroke="#B68B3A" stroke-width="2" stroke-opacity="0.5"/>
-  <text x="800" y="596" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="10" fill="#241A14" fill-opacity="0.55">SET PHOTOGRAPHY</text>
-  <text x="800" y="640" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="3" fill="#241A14" fill-opacity="0.35">image to come</text>
 </svg>
