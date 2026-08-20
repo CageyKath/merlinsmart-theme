@@ -69,7 +69,7 @@
               "settings": {
                 "label": "Shop the Set",
                 "link": "shopify://collections/all",
-                "style_class": "button-primary"
+                "style_class": "button"
               }
             }
           },
@@ -264,7 +264,7 @@
               "settings": {
                 "label": "Shop All",
                 "link": "shopify://collections/all",
-                "style_class": "button-primary"
+                "style_class": "button"
               }
             }
           },
