@@ -810,6 +810,70 @@
       "block_order": [
         "text"
       ]
+    },
+    "auburn_feature": {
+      "type": "media-with-content",
+      "settings": {
+        "media_width": "medium",
+        "media_height": "60svh",
+        "media_position": "left"
+      },
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between"
+          },
+          "blocks": {
+            "caption": {
+              "type": "text",
+              "name": "t:names.caption",
+              "settings": {
+                "text": "<p>Coming Soon</p>",
+                "type_preset": "h6"
+              }
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "height": "fit"
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<p>Auburn joins the lineup</p>",
+                    "type_preset": "h3"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Officially licensed Auburn seasonings are on the way.</p>",
+                    "max_width": "narrow",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "heading",
+                "text"
+              ]
+            }
+          },
+          "block_order": [
+            "caption",
+            "group"
+          ]
+        }
+      }
     }
   },
   "order": [
@@ -818,6 +882,7 @@
     "lsu_products",
     "bama_feature",
     "bama_products",
+    "auburn_feature",
     "all_collegiate",
     "trust_bar"
   ]
