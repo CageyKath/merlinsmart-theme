@@ -4,10 +4,13 @@
   TEMPORARY (build phase): replaces Shopify's demo placeholder artwork with
   MerlinsMart-toned placeholders so empty slots read as intentional.
 
-  NOTE: do NOT use opacity to hide the placeholder svg — opacity applies to the
-  element's background too, which blanks the replacement image and leaves an
-  empty void. Make the svg's shapes transparent instead and paint the
-  background on the svg itself.
+  TWO TRAPS, both hit during the build — do not reintroduce:
+  1. Do NOT use opacity to hide the placeholder svg. Opacity applies to the
+     element's background too, which blanks the replacement and leaves a void.
+     Make the svg's shapes transparent instead.
+  2. Put the background on the CONTAINER as well as the svg. Horizon wraps
+     placeholders in .media-block / .hero__media, and targeting the svg alone
+     misses cases where it is sized or positioned differently.
 
   TO REMOVE AT LAUNCH: delete this file, delete the two mm-placeholder-*.svg
   assets, and remove {%- render 'mm-overrides' -%} from layout/theme.liquid.
@@ -17,36 +20,50 @@
 {%- assign ph_square = 'mm-placeholder-square.svg' | asset_url -%}
 
 <style>
-  /* Square placeholder: product cards and galleries. */
-  svg[class*='placeholder'] {
-    background-color: #EDE6D8;
-    background-image: url({{ ph_square }});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  /* Hide Shopify's demo artwork without hiding the element. */
+  /* 1. Erase Shopify's demo artwork without hiding the element. */
   svg[class*='placeholder'] path,
   svg[class*='placeholder'] rect,
   svg[class*='placeholder'] circle,
   svg[class*='placeholder'] ellipse,
   svg[class*='placeholder'] polygon,
-  svg[class*='placeholder'] g {
+  svg[class*='placeholder'] g,
+  svg[class*='placeholder'] use {
     fill: transparent !important;
     stroke: none !important;
   }
 
-  /* Wide placeholder: hero and editorial media blocks. */
-  .media-block__placeholder,
-  .banner__media svg[class*='placeholder'],
-  .background-media svg[class*='placeholder'],
-  .media-with-content svg[class*='placeholder'] {
-    background-image: url({{ ph_wide }});
+  /* 2. Square placeholder — product cards, galleries, generic slots. */
+  svg[class*='placeholder'],
+  .card-gallery__placeholder,
+  .product-media-gallery__placeholder-image {
+    background-color: #EDE6D8 !important;
+    background-image: url({{ ph_square }}) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
-  /* Editorial media slot must hold height when empty. */
+  /* 3. Wide placeholder — hero and editorial media. Container AND svg, and
+        listed after the square rule so it wins regardless of specificity. */
+  .hero__media,
+  .hero__media svg[class*='placeholder'],
+  .media-block,
+  .media-block svg[class*='placeholder'],
+  .media-block__media,
+  .media-block__placeholder,
+  .media-with-content .media-block,
+  .background-media,
+  .background-media svg[class*='placeholder'] {
+    background-color: #EDE6D8 !important;
+    background-image: url({{ ph_wide }}) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* 4. Editorial media slots must hold height when they have no image. */
+  .media-block,
   .media-block__media {
-    min-height: 320px;
+    min-height: 340px;
   }
 </style>
