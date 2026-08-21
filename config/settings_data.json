@@ -1,7 +1,7 @@
 {
   "current": {
-    "logo_height": 36,
-    "logo_height_mobile": 28,
+    "logo_height": 44,
+    "logo_height_mobile": 32,
     "page_background_color": "{{ settings.color_palette.background }}",
     "page_width": "narrow",
     "page_text_color": "{{ settings.color_palette.foreground }}",
@@ -98,7 +98,8 @@
       "foreground": "#2A211B",
       "color1": "#241A14",
       "color2": "#B68B3A"
-    }
+    },
+    "logo": "shopify://shop_images/MerlinsMart_Logo_-_CREAM_for_dark_header.png"
   },
   "presets": {
     "Horizon": {
