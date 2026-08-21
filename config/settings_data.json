@@ -99,7 +99,8 @@
       "color1": "#241A14",
       "color2": "#B68B3A"
     },
-    "logo": "shopify://shop_images/MerlinsMart_Logo_-_CREAM_for_dark_header.png"
+    "logo": "shopify://shop_images/MerlinsMart_Logo_-_CREAM_for_dark_header.png",
+    "favicon": "shopify://shop_images/ChatGPT_Image_Aug_20_2026_11_35_39_AM.png"
   },
   "presets": {
     "Horizon": {

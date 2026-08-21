@@ -75,13 +75,15 @@
         "section_height_custom": 50,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
+        "overlay_color": "#241A14B3",
+        "overlay_style": "gradient",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-end": 72,
+        "image_1": "shopify://shop_images/ChatGPT_Image_Aug_20_2026_11_29_59_AM.png",
+        "image_1_mobile": "shopify://shop_images/ChatGPT_Image_Aug_20_2026_11_29_59_AM.png"
       }
     },
     "lsu_feature": {
