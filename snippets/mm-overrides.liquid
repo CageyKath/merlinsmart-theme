@@ -18,6 +18,7 @@
 
 {%- assign ph_wide = 'mm-placeholder-wide.svg' | asset_url -%}
 {%- assign ph_square = 'mm-placeholder-square.svg' | asset_url -%}
+{%- assign ph_auburn = 'mm-auburn-coming-soon.svg' | asset_url -%}
 
 <style>
   /* 1. Erase Shopify's demo artwork without hiding the element. */
@@ -65,5 +66,14 @@
   .media-block,
   .media-block__media {
     min-height: 340px;
+  }
+
+  /* 5. Auburn's module is CONTENT ("coming soon"), not a missing photo — its
+        own purpose-built graphic, scoped to that section only. Section id
+        comes from the JSON template key "auburn_feature"; Shopify wraps every
+        section in #shopify-section-{key} automatically. */
+  #shopify-section-auburn_feature .media-block,
+  #shopify-section-auburn_feature .media-block svg[class*='placeholder'] {
+    background-image: url({{ ph_auburn }}) !important;
   }
 </style>
