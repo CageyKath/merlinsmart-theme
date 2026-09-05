@@ -76,4 +76,38 @@
   #shopify-section-auburn_feature .media-block svg[class*='placeholder'] {
     background-image: url({{ ph_auburn }}) !important;
   }
+
+  /* 6. LAUNCH-PHASE "Coming Soon" ribbon — Kathy, Sep 5 2026: wants a diagonal
+        corner ribbon instead of the flat "Sold out" pill while real inventory
+        isn't in hand yet, without obscuring the product photo. Deliberately
+        NOT a settings toggle — it is wired to product.available in
+        blocks/_product-card-gallery.liquid, so it disappears on its own the
+        moment a product has real stock again. Nothing to remember to revert.
+        TO REMOVE EARLY (if ever wanted before real launch does it
+        automatically): delete this block and the matching Liquid block in
+        blocks/_product-card-gallery.liquid. */
+  .mm-coming-soon-ribbon {
+    position: absolute;
+    top: 18px;
+    left: -34px;
+    z-index: var(--layer-flat, 2);
+    width: 150px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    pointer-events: none;
+  }
+
+  .mm-coming-soon-ribbon span {
+    display: block;
+    padding-block: 6px;
+    text-align: center;
+    background: #241A14;
+    color: #F7F2E8;
+    font-family: var(--font-subheading--family, sans-serif);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-block: 1px solid #B68B3A;
+  }
 </style>
