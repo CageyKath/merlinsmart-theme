@@ -99,7 +99,8 @@
           "static": true,
           "settings": {
             "image": "shopify://shop_images/lsu-gift-set-cutout.png",
-            "image_position": "contain"
+            "image_position": "contain",
+            "link": "shopify://collections/lsu"
           }
         },
         "content": {
@@ -176,7 +177,8 @@
           "static": true,
           "settings": {
             "image": "shopify://shop_images/alabama-gift-set-cutout.png",
-            "image_position": "contain"
+            "image_position": "contain",
+            "link": "shopify://collections/alabama"
           }
         },
         "content": {

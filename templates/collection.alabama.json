@@ -21,7 +21,8 @@
           "static": true,
           "settings": {
             "image_position": "contain",
-            "image": "shopify://shop_images/alabama-gift-set-cutout.png"
+            "image": "shopify://shop_images/alabama-gift-set-cutout.png",
+            "link": "shopify://products/alabama-gift-set-2-flavor-collegiate-collection"
           }
         },
         "content": {

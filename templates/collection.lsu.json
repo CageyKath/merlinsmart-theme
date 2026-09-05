@@ -21,7 +21,8 @@
           "static": true,
           "settings": {
             "image_position": "contain",
-            "image": "shopify://shop_images/lsu-gift-set-cutout.png"
+            "image": "shopify://shop_images/lsu-gift-set-cutout.png",
+            "link": "shopify://products/lsu-gift-set-3-flavor-collegiate-collection"
           }
         },
         "content": {
