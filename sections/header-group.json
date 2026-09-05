@@ -19,7 +19,8 @@
             "text": "Coming this fall. Officially licensed LSU and Alabama BBQ rubs and gift sets are almost here — sign up to be notified.",
             "link": "#shopify-section-footer_m9NzUG",
             "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
+            "font_size": "1.125rem",
+            "weight": "600",
             "letter_spacing": "normal",
             "case": "none",
             "text_color": "#F7F2E8"
@@ -35,10 +36,10 @@
         "speed": 5,
         "section_width": "page-width",
         "background_color": "#241A14",
-        "divider_width": 1,
+        "divider_width": 2,
         "divider_color": "#B68B3A",
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "header_section": {
