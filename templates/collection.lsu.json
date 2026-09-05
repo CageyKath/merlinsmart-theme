@@ -18,7 +18,11 @@
       "blocks": {
         "media": {
           "type": "_media-without-appearance",
-          "static": true
+          "static": true,
+          "settings": {
+            "image": "shopify://shop_images/lsu-gift-set-cutout.png",
+            "image_position": "contain"
+          }
         },
         "content": {
           "type": "_content-without-appearance",
