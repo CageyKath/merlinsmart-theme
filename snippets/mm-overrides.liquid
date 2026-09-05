@@ -72,8 +72,8 @@
         own purpose-built graphic, scoped to that section only. Section id
         comes from the JSON template key "auburn_feature"; Shopify wraps every
         section in #shopify-section-{key} automatically. */
-  #shopify-section-auburn_feature .media-block,
-  #shopify-section-auburn_feature .media-block svg[class*='placeholder'] {
+  [id$="__auburn_feature"] .media-block,
+  [id$="__auburn_feature"] .media-block svg[class*='placeholder'] {
     background-image: url({{ ph_auburn }}) !important;
   }
 
@@ -118,14 +118,14 @@
         self-clearing product.available check used above.
         TO REMOVE AT LAUNCH: this one IS a manual step — delete this rule
         once real inventory is live (unlike #6, this does not clear itself). */
-  #shopify-section-lsu_feature .media-block,
-  #shopify-section-bama_feature .media-block,
+  [id$="__lsu_feature"] .media-block,
+  [id$="__bama_feature"] .media-block,
   [id$="__featured_set"] .media-block {
     position: relative;
   }
 
-  #shopify-section-lsu_feature .media-block::after,
-  #shopify-section-bama_feature .media-block::after,
+  [id$="__lsu_feature"] .media-block::after,
+  [id$="__bama_feature"] .media-block::after,
   [id$="__featured_set"] .media-block::after {
     content: "Coming Soon";
     position: absolute;
