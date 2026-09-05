@@ -110,4 +110,40 @@
     text-transform: uppercase;
     border-block: 1px solid #B68B3A;
   }
+
+  /* 7. Same launch-phase ribbon, but on the big school HERO photos (homepage
+        LSU/Alabama feature blocks + both collection pages' top feature).
+        These aren't bound to a single Liquid product object the way a
+        product card is, so this is a plain CSS overlay rather than the
+        self-clearing product.available check used above.
+        TO REMOVE AT LAUNCH: this one IS a manual step — delete this rule
+        once real inventory is live (unlike #6, this does not clear itself). */
+  #shopify-section-lsu_feature .media-block,
+  #shopify-section-bama_feature .media-block,
+  [id$="__featured_set"] .media-block {
+    position: relative;
+  }
+
+  #shopify-section-lsu_feature .media-block::after,
+  #shopify-section-bama_feature .media-block::after,
+  [id$="__featured_set"] .media-block::after {
+    content: "Coming Soon";
+    position: absolute;
+    top: 28px;
+    left: -54px;
+    z-index: 2;
+    width: 220px;
+    padding-block: 8px;
+    transform: rotate(-45deg);
+    text-align: center;
+    background: #241A14;
+    color: #F7F2E8;
+    font-family: var(--font-subheading--family, sans-serif);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-block: 1px solid #B68B3A;
+    pointer-events: none;
+  }
 </style>
