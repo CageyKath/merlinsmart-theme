@@ -16,7 +16,8 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Officially licensed collegiate gifts",
+            "text": "Coming this fall. Officially licensed LSU and Alabama BBQ rubs and gift sets are almost here — sign up to be notified.",
+            "link": "#shopify-section-footer_m9NzUG",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "letter_spacing": "normal",

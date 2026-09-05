@@ -96,7 +96,11 @@
       "blocks": {
         "media": {
           "type": "_media-without-appearance",
-          "static": true
+          "static": true,
+          "settings": {
+            "image": "shopify://shop_images/lsu-variety-in-box_749ee21b-cc24-4dc5-a01d-6bbabf903054.png",
+            "image_position": "contain"
+          }
         },
         "content": {
           "type": "_content-without-appearance",
@@ -355,7 +359,11 @@
       "blocks": {
         "media": {
           "type": "_media-without-appearance",
-          "static": true
+          "static": true,
+          "settings": {
+            "image": "shopify://shop_images/alabama-gift-set-2flavor.png",
+            "image_position": "contain"
+          }
         },
         "content": {
           "type": "_content-without-appearance",
