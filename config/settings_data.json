@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
+    "logo": "shopify://shop_images/MerlinsMart_Logo_-_CREAM_for_dark_header.png",
     "logo_height": 44,
     "logo_height_mobile": 32,
-    "page_background_color": "{{ settings.color_palette.background }}",
-    "page_width": "narrow",
+    "favicon": "shopify://shop_images/ChatGPT_Image_Aug_21_2026_10_50_21_AM.png",
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n5",
@@ -35,6 +44,8 @@
     "type_font_h6": "subheading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
+    "page_background_color": "{{ settings.color_palette.background }}",
+    "page_width": "narrow",
     "page_transition_enabled": false,
     "transition_to_main_product": false,
     "card_hover_effect": "none",
@@ -93,14 +104,20 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_palette": {
       "background": "#F7F2E8",
       "foreground": "#2A211B",
       "color1": "#241A14",
       "color2": "#B68B3A"
-    },
-    "logo": "shopify://shop_images/MerlinsMart_Logo_-_CREAM_for_dark_header.png",
-    "favicon": "shopify://shop_images/ChatGPT_Image_Aug_21_2026_10_50_21_AM.png"
+    }
   },
   "presets": {
     "Horizon": {
