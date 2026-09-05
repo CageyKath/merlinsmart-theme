@@ -233,8 +233,8 @@
       },
       "name": "t:names.product_list",
       "settings": {
-        "collection": "lsu-3packs",
         "layout_type": "grid",
+        "collection": "lsu-3packs",
         "carousel_on_mobile": false,
         "max_products": 3,
         "columns": 3,
